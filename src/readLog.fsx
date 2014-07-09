@@ -1,11 +1,11 @@
-#r "packages/FAKE/tools/FakeLib.dll"
+#r "../packages/FAKE/tools/FakeLib.dll"
 
 open Fake
 open System
 open System.Diagnostics
 
 let gitPath = getBuildParamOrDefault "git" @"C:\Program Files (x86)\Git\bin\git.exe"
-let srcPath = getBuildParam "path"
+let srcPath = getBuildParam "srcPath" 
 
 let gitLog () =
     let p = new Process()
