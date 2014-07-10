@@ -9,3 +9,9 @@ I've defaulted the git bin path to: ``@"C:\Program Files (x86)\Git\bin\git.exe"`
 ### I want to analysis different things!
 
 That's kind of the whole point :). Crack open ``generate/glue.fsx`` and start adding things. The data manipulation is being done by [Deedle](http://bluemountaincapital.github.io/Deedle) which I'm enjoying a lot, but I'm not an expert in by any means.
+
+### What does it look like?
+
+Something like this:
+
+![Commits per week](commits-per-week.PNG)
