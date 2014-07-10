@@ -13,3 +13,6 @@ let stream = many commit
 
 let parseLog s =
     runParserOnStream stream () "log" s Text.Encoding.UTF8
+    |> function
+       | Success (x, _, _) -> x
+       | Failure (e, _, _) -> failwith e
