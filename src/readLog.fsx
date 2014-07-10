@@ -5,7 +5,7 @@ open System
 open System.Diagnostics
 
 let gitPath = getBuildParamOrDefault "git" @"C:\Program Files (x86)\Git\bin\git.exe"
-let srcPath = getBuildParam "srcPath" 
+let srcPath = getBuildParamOrDefault "srcPath" __SOURCE_DIRECTORY__
 
 let gitLog () =
     let p = new Process()

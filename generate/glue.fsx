@@ -25,13 +25,5 @@ let strResult =
 Which results in:
 *)
 
-(*** include-value: strResult ***)
+(*** include-value:strResult ***)
 
-(**
-## Testing
- *)
-
-(*** define-output: test ***)
-let test = 22
-
-(*** include-output: test ***)
